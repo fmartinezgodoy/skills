@@ -54,8 +54,10 @@ Read the routing table, load only the reference you need, then apply the hard ru
    WHY: bias to act. Over-interviewing costs more than a quick revision after a real test.
 8. **User approves SOUL.md** before it is written, and before any later edit.
    WHY: the SOUL is the bot's identity; agent writes to it always require approval.
-9. **Do not invent CLI commands.** Enable skills/toolsets/MCP and create routines through
-   Bot Mode or the profile's `config.yaml`. The only verbatim CLI is `hermes profile create`.
+9. **Do not invent CLI commands.** The verified command set is: `hermes profile create
+   <name> --description "<role>"`, `hermes -p <name> skills install <tap>/<skill> -y`,
+   and the agent's cron tool for `[bot:<name>]` routines. Anything else: use Bot Mode
+   or the profile's `config.yaml`.
    WHY: a made-up command fails silently or does something unintended.
 10. **Baptism of fire before handover.** Give the bot one real task and verify the output.
     WHY: a bot that has never done its job is a draft, not a bot.
