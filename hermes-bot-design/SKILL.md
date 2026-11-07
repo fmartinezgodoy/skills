@@ -44,6 +44,8 @@ Read the routing table, load only the reference you need, then apply the hard ru
    (a scout does not post; a drafter does not send; stay quiet when there is nothing to add).
    WHY: models drift toward being helpful beyond scope; anti-jobs are the brake.
 4. **No leftover tools.** Enable only the skills, toolsets, and MCP servers the job needs.
+   The child's toolset follows its own job, not the builder's — a child may have toolsets
+   the builder lacks (the builder configures them without using them).
    WHY: every extra tool is extra tokens, extra attack surface, and an invitation to scope creep.
 5. **SOUL.md is identity only.** Tone, personality, style, avoids, and how to handle
    uncertainty, disagreement, and ambiguity. Never paths, commands, ports, architecture, or workflow.

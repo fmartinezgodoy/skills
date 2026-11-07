@@ -47,10 +47,13 @@ clear, build — a quick revision after a real test beats a long interview.
 5. **Enable the minimum skill/toolset set.** Use Bot Mode's per-skill and per-MCP toggles,
    or edit the profile's `config.yaml`. Start from nothing and add only what the one job
    requires. Pin the model here if step 1 asked for it. Do not invent CLI commands for this.
-   Also DISABLE the toolsets the job does not use — set `agent.disabled_toolsets` in the
-   profile's `config.yaml` (reference trim: prometheus runs on web, terminal, file, skills,
-   todo, memory, session_search, clarify, cronjob only). Every enabled toolset is noise,
-   tokens, and attack surface for every future turn of that bot.
+   The child's toolset is chosen by THE CHILD'S JOB, never cloned from the builder:
+   a child may enable toolsets the builder itself does not have (a browser scout needs
+   `browser`, a voice bot needs `tts` — the builder configures them without using them).
+   New profiles start with every toolset enabled, so the real work is setting
+   `agent.disabled_toolsets` in the child's `config.yaml` to remove everything the job
+   does not use. Every enabled toolset is noise, tokens, and attack surface for every
+   future turn of that bot.
 
 6. **Add routines only if a recurring job exists.** Name each one
    `[bot:<name>] <routine>` (e.g. `[bot:pr-scout] morning sweep`). Configure it through
