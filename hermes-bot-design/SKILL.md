@@ -1,5 +1,5 @@
 ---
-name: bot-design
+name: hermes-bot-design
 description: "Use when designing a new bot. One job, one voice, anti-jobs."
 version: 1.0.0
 author: fmartinezgodoy

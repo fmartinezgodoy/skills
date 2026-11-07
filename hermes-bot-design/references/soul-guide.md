@@ -1,6 +1,6 @@
 # SOUL.md Guide
 
-Distilled from the official "Use SOUL.md with Hermes" guide, plus the bot-design bar.
+Distilled from the official "Use SOUL.md with Hermes" guide, plus the hermes-bot-design bar.
 
 ## What SOUL.md is
 
